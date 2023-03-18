@@ -127,7 +127,7 @@ class Gui:
                 self.textFrame.config(text=f"Stats:\n"
                                            f"Time: {timetaken} seconds\n"
                                            f"Words: {len(words)}\n"
-                                           f"WPM: {round(timetaken / len(words) * 60, 3)}\n"
+                                           f"WPM: {round(len(words) / timetaken  * 60, 3)}\n"
                                            f"Accuracy: {round(accuracy, 3)}%\n"
                                            f"Grade: {grade}")
                 self.clearButton.config(text="Restart")
